@@ -1,0 +1,126 @@
+/* CSS Document */
+
+form#informe {
+	
+	width: 900px;
+}
+form label, form input {
+    display: block;
+   /* float: left;*/
+    font-size: 12px;
+    font-weight: bold;
+    height: 24px;
+    margin: 0 10px 0 0;
+    padding: 3px 7px;
+    position: relative;
+    width: 180px;
+}
+
+
+#titulo{
+    background-color: #d9d9d9;
+	font-size: 20pt;
+	margin: auto auto;
+    margin-bottom: 20px;
+	width: 850px;
+}
+
+#responsable, #inrespon, #entrega, #date1,#incor, #date2, #date3, 
+#ha, #Actmes, #casos,#problemas, #inproblemas{
+	display: inline-block;
+    margin-top: 10px;
+}
+
+#inrespon{
+    width: 250px;
+}
+
+#date1{
+    width: 150px;
+}
+
+#date3{
+    margin-right: 50px;
+}
+
+#responsable, #entrega, #incor{
+    text-align: right;
+}
+
+#incor{
+   margin-left: -10px;
+   width: 155px;
+}
+
+#date2, #date3{
+    width: 250px;
+}
+
+#ha{
+    margin-right: 10px;
+    text-align: center;
+    width: 15px;
+}
+
+#fila1{
+    text-align: center;
+    width: 850px
+}
+#fila2{
+    text-align: center;
+    width: 200px
+}
+#col1,#col2,#col3,#col4,#col5{
+    height: 40px;
+    padding-top: 20 px;
+    width: 150px;
+}
+
+#col5{
+    padding-top: 0px;
+}
+
+#problemas{
+    margin-left: -30px;
+    text-align: right;
+    width: 350px;
+}
+
+#inproblemas{
+    width: 500px;
+}
+
+#cascol1,#cascol2, #cas01, #cas02{
+    height: 20px;
+    width: 350px;
+}
+
+#casos{
+    margin: 10px auto;
+}
+
+#mejoras, #aportaciones, #text1{
+    
+    margin-top: 10px;
+    text-align: left;
+    width: 850px;
+}
+
+#text1{
+    height: 80px;
+    margin-left: -40px;
+    width: 860px;
+}
+
+#rendimiento, #ren, #integracion, #int{
+    display: inline-block;
+}
+
+#ren, #int{
+    margin-right: 500px;
+}
+
+#rendimiento, #integracion{
+    text-align: right;
+    width: 250px;
+}

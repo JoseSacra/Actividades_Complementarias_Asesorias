@@ -1,0 +1,348 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background: -webkit-linear-gradient(top, #CCC, #FFF);
+	background: -moz-linear-gradient(top, #ccc, #fff);
+	background: -ms-linear-gradient(top, #CCC, #FFF);
+	background: -o-linear-gradient(top, #CCC, #FFF);
+/*	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 2px auto;
+	text-align: center;
+	max-width:1024px;*/
+}
+h1{
+	font-size:30px;
+	color:#000;
+	margin:35px auto;
+	margin-bottom:10px;
+	text-align:center;
+}
+h2{
+	font-size:20px;
+}
+p{
+	font-size:24px;
+}	
+header, nav,footer{
+	margin:5px auto;
+	max-width:95%;
+	padding:2px;
+	text-align:center;
+}
+
+/*---- Maquetacion -----*/
+h1#titulo, figure#Logo{
+	display:inline-block;
+	padding:4px;
+	vertical-align:top;
+}
+
+h1#titulo{
+	margin:35px auto;
+}
+
+section#contenedor{
+	border-radius:5px;
+	margin:100px auto;
+	margin-top:60px;
+	max-width:95%;
+	padding:10px;
+	text-align:center;
+}
+section#principal, #status, aside{
+	border-radius:5px;
+	display:inline-block;
+	margin:10px auto;
+	max-width:960px;
+	min-height:200px;
+	padding:0.15px;
+	text-align:center;
+	vertical-align:top;
+	margin-bottom:200px;
+}	
+section#status{
+	background:#F00;
+	width:95%;
+}
+article{
+	margin:150px 5px;
+	padding:2px;
+	vertical-align:top;
+}
+
+#global,#grupal{
+	background:#06F;
+	border-radius:5px;
+	display:inline-block;
+	margin:30px auto;
+	width:47.5%;
+}
+aside{
+	width:25%;
+}
+/*#menu{
+	height:1px;
+	margin-top:-10px;
+	padding-left:200px;
+}
+/*---- Menu principal -----*/
+/*#menu ul{
+	text-align:center;
+	margin:5px auto;
+	padding:5px;
+	list-style:none;
+}
+#menu li a{
+	width:97px;
+	height:40px;
+	display:block;
+	background:#09F no-repeat;
+	background:linear-gradient(top, #00A03E, #737373, #0C3DA4);
+	background:-moz-linear-gradient(top, #00A03E, #737373, #0C3DA4);
+	background:-o-linear-gradient(top, #00A03E, #737373, #0C3DA4);
+	background:-ms-linear-gradient(top, #00A03E, #737373, #0C3DA4);
+	background:-webkit-linear-gradient(top, #00A03E, #737373, #0C3DA4);
+	border-radius:5px;
+	float:left;
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	text-align: center;
+	text-decoration:none;
+	margin-right:20px;
+	padding-left:40px;
+	padding-top:13px;
+	position:relative;
+	overflow:hidden;
+	transition:transform 0.4s;
+	-moz-transition:-moz-transform 0.4s;
+	-ms-transition:-ms-transform 0.4s;
+	-o-transition:-o-transform 0.4s;
+	-webkit-transition:-webkit-transform 0.4s;
+	transition: transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	-ms-transition: -ms-transform 0.4s;
+	-o-transition: -o-transform 0.4s;
+	-webkit-transition: -webkit-transform 0.4s;
+}
+#menu li a:hover{
+	transform:scale(1.3,1.3);
+	-moz-transform:scale(1.3,1.3);
+	-o-transform:scale(1.3,1.3);
+	-ms-transform:scale(1.3,1.3);
+	-webkit-transform:scale(1.3,1.3);
+}
+#menu li a #icono1{
+	width:100px;
+	height:100px;
+	display:block;
+	background:url(../img/birrete.png) no-repeat;
+	position:absolute;
+	left:5px;
+	top:-50px;
+	transition: top 0.3s, opasity 0.3s;
+	-moz-transition: top 0.3s, opasity 0.3s;
+	-ms-transition: top 0.3s, opasity 0.3s;
+	-o-transition: top 0.3s, opasity 0.3s;
+	-webkit-transition: top 0.3s, opasity 0.3s;
+	opacity:0;
+}
+#menu li a:hover #icono1{
+	top:2px;
+	opacity:1;
+}
+#menu li a #icono2{
+	width:100px;
+	height:100px;
+	display:block;
+	background:url(../img/Portafolio.png) no-repeat;
+	position:absolute;
+	left:2px;
+	top:-50px;
+	transition: top 0.3s, opasity 0.3s;
+	-moz-transition: top 0.3s, opasity 0.3s;
+	-ms-transition: top 0.3s, opasity 0.3s;
+	-o-transition: top 0.3s, opasity 0.3s;
+	-webkit-transition: top 0.3s, opasity 0.3s;
+	opacity:0;
+}
+#menu li a:hover #icono2{
+	top:2px;
+	opacity:1;
+}
+#menu li a #icono3{
+	width:100px;
+	height:100px;
+	display:block;
+	background:url(../img/Jefe.png) no-repeat;
+	position:absolute;
+	left:0px;
+	top:-50px;
+	transition: top 0.3s, opasity 0.3s;
+	-moz-transition: top 0.3s, opasity 0.3s;
+	-ms-transition: top 0.3s, opasity 0.3s;
+	-o-transition: top 0.3s, opasity 0.3s;
+	-webkit-transition: top 0.3s, opasity 0.3s;
+	opacity:0;
+}
+#menu li a:hover #icono3{
+	top:4px;
+	opacity:1;
+}
+#menu li a #icono4{
+	width:100px;
+	height:100px;
+	display:block;
+	background:url(../imagenes/escolares.png) no-repeat;
+	position:absolute;
+	left:5px;
+	top:-50px;
+	transition: top 0.3s, opasity 0.3s;
+	-moz-transition: top 0.3s, opasity 0.3s;
+	-ms-transition: top 0.3s, opasity 0.3s;
+	-o-transition: top 0.3s, opasity 0.3s;
+	-webkit-transition: top 0.3s, opasity 0.3s;
+	opacity:0;
+
+}
+#menu li a:hover #icono4{
+	top:4px;
+	opacity:1;	
+}
+#menu li a #icono5{
+	width:100px;
+	height:100px;
+	display:block;
+	background:url(../imagenes/Vinculacion.png) no-repeat;
+	position:absolute;
+	left:5px;
+	top:-50px;
+	transition: top 0.3s, opasity 0.3s;
+	-moz-transition: top 0.3s, opasity 0.3s;
+	-ms-transition: top 0.3s, opasity 0.3s;
+	-o-transition: top 0.3s, opasity 0.3s;
+	-webkit-transition: top 0.3s, opasity 0.3s;
+	opacity:0;
+
+}
+#menu li a:hover #icono5{
+	top:2px;
+	opacity:1;	
+}
+#menu li a #icono6{
+	width:100px;
+	height:100px;
+	display:block;
+	background:url(../imagenes/financieros.png) no-repeat;
+	position:absolute;
+	left:5px;
+	top:-50px;
+	transition: top 0.3s, opasity 0.3s;
+	-moz-transition: top 0.3s, opasity 0.3s;
+	-ms-transition: top 0.3s, opasity 0.3s;
+	-o-transition: top 0.3s, opasity 0.3s;
+	-webkit-transition: top 0.3s, opasity 0.3s;
+	opacity:0;
+
+}
+#menu li a:hover #icono6{
+	top:2px;
+	opacity:1;	
+}*//*
+#pie {
+	clear: both;
+	text-align: Right;
+	padding: 0px;
+	border-top: 2px solid #999999;
+}*/
+#new, .boton, #new2, #ficha{
+	background:linear-gradient(top, #00A03E, #737373, #0C3DA4);
+	background:-moz-linear-gradient(top, #00A03E, #737373, #0C3DA4);
+	background:-o-linear-gradient(top, #00A03E, #737373, #0C3DA4);
+	background:-ms-linear-gradient(top, #00A03E, #737373, #0C3DA4);
+	background:-webkit-linear-gradient(top, #00A03E, #737373, #0C3DA4);
+	border-radius:5px;
+	padding:5px;
+	max-width:130px;
+	color:#FFF;
+	text-decoration:none;
+}
+
+#new2, #ficha{
+	max-width:200px;
+}
+
+#new:hover,#new2:hover, #ficha:hover {
+	background: #737373;
+}
+
+#usu,#usu2,#asal{
+	color:#fff;
+	text-decoration:none;
+} 
+#POPUP{
+	background-color:#F00;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border:solid 1PX #990000;
+	box-shadow:0px 3px 10px #fafafa; 
+	margin-right:10px;
+	position:absolute;
+	top:0;
+	right:0;
+	text-align:center;
+	width:20px;
+}
+#cierre{
+    border-radius:5px;
+    font-size:14px;
+    color:#FFF;
+    margin-bottom:10px;
+    text-decoration:none;
+}
+#POPUP:hover{
+	background-color:#F00;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border:solid 1PX #990000;
+	box-shadow:inset 0px 3px 10px #fafafa; 
+	margin-right:10px;
+	position:absolute;
+	top:0;
+	right:0;
+	text-align:center;
+	width:20px;
+}
+#cierre:hover{
+	font-family:"Arial Black", Gadget, sans-serif;
+}
+
+/*Animaciones*/
+/*
+@keyframes animarIcono1{
+	from{left:130px; top:0px;}
+	to{left:130px; top:135px;}
+}
+@-moz-keyframes animarIcono1{
+	from{left:159px; top:135px;}
+	to{left:1010px; top:-139px;}
+}
+@-o-keyframes animarIcono1{
+	from{left:159px; top:135px;}
+	to{left:1010px; top:-139px;}
+}
+@-ms-keyframes animarIcono1{
+	from{left:159px; top:135px;}
+	to{left:1010px; top:-139px;}
+}
+@-webkit-keyframes animarIcono1{
+	from{left:159px; top:135px;}
+	to{left:1010px; top:-139px;}
+}
+*/
