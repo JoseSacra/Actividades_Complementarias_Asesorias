@@ -17,7 +17,9 @@ Route::get('/', function () {
 
 Route::get('/asesorias', function () {
     //return view('welcome');
-    echo "Area de Asesorias Academicas";
+    //echo "Area de Asesorias Academicas";
+    $vista = view('layout/headerasesoria').view('aslogin').view('layout/footer');
+    return $vista;
 });
 
 Route::get('/asesorias/alumno', function () {
@@ -72,5 +74,32 @@ Route::get('/asesorias/coordinador/reporte-docente', function () {
 
 Route::get('/act-comp', function () {
     //return view('welcome');
-    echo "Area de Actividades Complementarias";
+    $vista = view('layout/headerasesoria').view('aclogin').view('layout/footer');
+    return $vista;
+//    echo "Area de Actividades Complementarias";
+});
+
+Route::get('/act-comp/alumno', function () {
+    //return view('welcome');
+    echo "Seccion de actividades complementarias para el alumno";
+});
+
+Route::get('/act-comp/docente', function () {
+    //return view('welcome');
+    echo "Seccion de actividades complementarias para el docente";
+});
+
+Route::get('/act-comp/coordinador', function () {
+    //return view('welcome');
+    echo "Seccion de actividades complementarias para el coordinador de la carrera";
+});
+
+Route::get('/act-comp/tutorias', function () {
+    //return view('welcome');
+    echo "Seccion de actividades complementarias para el encargado de tutorias";
+});
+
+Route::get('/act-comp/innovacion', function () {
+    //return view('welcome');
+    echo "Seccion de actividades complementarias para el encargado de Innovacion Tecnologica";
 });

@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <link href="{{url('public/css/bootstrap.min.css')}} " rel="stylesheet">
     <link href="{{url('public/css/style.css')}} " rel="stylesheet">
+    <link href="{{url('public/css/Forms.css')}} " rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,9 +37,10 @@
                                 <div class="span-21">
                                     <div class="menu-primary-menu-container">
                                         <ul id="menu-primary-menu" class="nav">
-                                            <li id="menu-item-198" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item menu-item-198"><a href="../alumno">Inicio</a></li>
-                                            <li id="menu-item-181" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-181"><a href="../alumno/solicitar">Solicitar Asesoria</a></li>
+                                            <li id="menu-item-198" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item menu-item-198"><a href=""></a></li>
+<!--                                            <li id="menu-item-181" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-181"><a href="../alumno/solicitar">Solicitar Asesoria</a></li>
                                             <li id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-182"><a href="../alumno/llenar">Ficha de Asesoria</a></li>
+                                        --></ul>
                                     </div>
                                 </div>
                                 <div class="span-2 last">
