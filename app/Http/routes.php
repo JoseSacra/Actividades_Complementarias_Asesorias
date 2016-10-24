@@ -28,7 +28,7 @@ Route::get('/asesorias/alumno', function () {
 });
 
 Route::get('/asesorias/alumno/llenar', function () {
-    $vista = view('layout/headeralumno').view('as-llenar-alumno').view('layout/footer');
+    $vista = view('layout/headeralumno').view('as-llena-alumno').view('layout/footer');
     return $vista;
 });
 
@@ -38,38 +38,44 @@ Route::get('/asesorias/alumno/solicitar', function () {
 });
 
 Route::get('/asesorias/docente', function () {
-    //return view('welcome');
-    echo "Index del Docente";
+    $vista = view('layout/headerdocente').view('as-docente').view('layout/footer');
+    return $vista;
+    //echo "Index del Docente";
 });
 
 Route::get('/asesorias/docente/consultar', function () {
-    //return view('welcome');
-    echo "Consultar solicitudes de asesorias de los Alumnos";
+    $vista = view('layout/headerdocente').view('as-consultar-docente').view('layout/footer');
+    return $vista;
 });
 
 Route::get('/asesorias/docente/asignar', function () {
-    //return view('welcome');
-    echo "Asignar asesorias a los alumnos";
+    $vista = view('layout/headerdocente').view('as-asignar-docente').view('layout/footer');
+    return $vista;
 });
 
 Route::get('/asesorias/docente/reporte', function () {
-    //return view('welcome');
-    echo "Generar el reporte mensual de asesorias del docente";
+    $vista = view('layout/headerdocente').view('as-reporte-docente').view('layout/footer');
+    return $vista;
 });
 
 Route::get('/asesorias/coordinador', function () {
-    //return view('welcome');
-    echo "Index del Coordinador de Carrera";
+    $vista = view('layout/headercoordinador').view('as-coordinador').view('layout/footer');
+    return $vista;
 });
 
-Route::get('/asesorias/coordinador/asesoria-alumno', function () {
-    //return view('welcome');
-    echo "Consultar asesorias de los alumnos";
+Route::get('/asesorias/coordinador/alumno', function () {
+    $vista = view('layout/headercoordinador').view('as-alumno-coordinador').view('layout/footer');
+    return $vista;
 });
 
-Route::get('/asesorias/coordinador/reporte-docente', function () {
-    //return view('welcome');
-    echo "Consultar reportes de asesorias de los docentes";
+Route::get('/asesorias/coordinador/docente', function () {
+    $vista = view('layout/headercoordinador').view('as-docente-coordinador').view('layout/footer');
+    return $vista;
+});
+
+Route::get('/asesorias/coordinador/administrar', function () {
+    $vista = view('layout/headercoordinador').view('as-administrar-coordinador').view('layout/footer');
+    return $vista;
 });
 
 Route::get('/act-comp', function () {
