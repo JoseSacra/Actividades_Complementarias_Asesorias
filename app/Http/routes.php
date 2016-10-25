@@ -86,26 +86,26 @@ Route::get('/act-comp', function () {
 });
 
 Route::get('/act-comp/alumno', function () {
-    //return view('welcome');
-    echo "Seccion de actividades complementarias para el alumno";
+    $vista = view('layout/headeractcomp').view('actcomp-alumno').view('layout/footer');
+    return $vista;
 });
 
 Route::get('/act-comp/docente', function () {
-    //return view('welcome');
-    echo "Seccion de actividades complementarias para el docente";
+    $vista = view('layout/headeractcomp').view('actcomp-docente').view('layout/footer');
+    return $vista;
 });
 
 Route::get('/act-comp/coordinador', function () {
-    //return view('welcome');
-    echo "Seccion de actividades complementarias para el coordinador de la carrera";
+    $vista = view('layout/headeractcomp').view('actcomp-coordinador').view('layout/footer');
+    return $vista;
 });
 
 Route::get('/act-comp/tutorias', function () {
-    //return view('welcome');
-    echo "Seccion de actividades complementarias para el encargado de tutorias";
+    $vista = view('layout/headeractcomp').view('actcomp-tutorias').view('layout/footer');
+    return $vista;
 });
 
 Route::get('/act-comp/innovacion', function () {
-    //return view('welcome');
-    echo "Seccion de actividades complementarias para el encargado de Innovacion Tecnologica";
+    $vista = view('layout/headeractcomp').view('actcomp-innovacion').view('layout/footer');
+    return $vista;
 });
